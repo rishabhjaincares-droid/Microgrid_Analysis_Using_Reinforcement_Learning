@@ -1,0 +1,3083 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/2x4nap4r",
+    "id": "2x4nap4r",
+    "slide": 2,
+    "layoutId": "/ppt/slideLayouts/slideLayout1.xml",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "backgroundColor": "accent1",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1587.33,
+      "height": 2245
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Office Theme",
+    "colors": {
+      "accent1": "#4472C4",
+      "accent2": "#ED7D31",
+      "accent3": "#A5A5A5",
+      "accent4": "#FFC000",
+      "accent5": "#5B9BD5",
+      "accent6": "#70AD47",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#44546A",
+      "lt2": "#E7E6E6",
+      "hlink": "#0563C1",
+      "folHlink": "#954F72"
+    },
+    "fontScheme": {
+      "name": "Office Theme",
+      "majorFont": {
+        "latinTypeface": "Calibri Light"
+      },
+      "minorFont": {
+        "latinTypeface": "Calibri"
+      }
+    },
+    "typefaces": [
+      "Arial",
+      "Bookman Old Style",
+      "Calibri",
+      "Calibri Light",
+      "Comic Sans MS",
+      "Playfair Display",
+      "Söhne",
+      "Times New Roman",
+      "Trebuchet MS"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout1.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout1.xml/2",
+          "id": "2",
+          "name": "Title 1",
+          "bbox": [
+            119.05,
+            367.41,
+            1349.23,
+            781.59
+          ],
+          "text": "Click to edit Master title style",
+          "textPreview": "Click to edit Master title style",
+          "resolvedTextStyle": {
+            "anchor": 3,
+            "verticalAlignment": "bottom"
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Click to edit Master title style",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Click to edit Master title style"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout1.xml/3",
+          "id": "3",
+          "name": "Subtitle 2",
+          "bbox": [
+            198.42,
+            1179.14,
+            1190.5,
+            542.02
+          ],
+          "text": "Click to edit Master subtitle style",
+          "textPreview": "Click to edit Master subtitle style",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Click to edit Master subtitle style",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Click to edit Master subtitle style"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout1.xml/4",
+          "id": "4",
+          "name": "Date Placeholder 3",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout1.xml/5",
+          "id": "5",
+          "name": "Footer Placeholder 4",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout1.xml/6",
+          "id": "6",
+          "name": "Slide Number Placeholder 5",
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/2",
+          "id": "2",
+          "name": "Title Placeholder 1",
+          "bbox": [
+            109.13,
+            119.53,
+            1369.07,
+            433.93
+          ],
+          "geometry": "rect",
+          "text": "Click to edit Master title style",
+          "textPreview": "Click to edit Master title style",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Click to edit Master title style",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Click to edit Master title style"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/3",
+          "id": "3",
+          "name": "Text Placeholder 2",
+          "bbox": [
+            109.13,
+            597.63,
+            1369.07,
+            1424.43
+          ],
+          "geometry": "rect",
+          "text": "Click to edit Master text styles\nSecond level\nThird level\nFourth level\nFifth level",
+          "textPreview": "Click to edit Master text styles | Second level | Third level | Fourth level | Fifth level",
+          "resolvedTextStyle": {
+            "vertical": 1,
+            "autoFit": "shrinkText",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Click to edit Master text styles",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Click to edit Master text styles"
+                }
+              ]
+            },
+            {
+              "index": 2,
+              "text": "Second level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Second level"
+                }
+              ]
+            },
+            {
+              "index": 3,
+              "text": "Third level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Third level"
+                }
+              ]
+            },
+            {
+              "index": 4,
+              "text": "Fourth level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Fourth level"
+                }
+              ]
+            },
+            {
+              "index": 5,
+              "text": "Fifth level",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Fifth level"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/4",
+          "id": "4",
+          "name": "Date Placeholder 3",
+          "bbox": [
+            109.13,
+            2080.78,
+            357.15,
+            119.53
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 4,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/5",
+          "id": "5",
+          "name": "Footer Placeholder 4",
+          "bbox": [
+            525.8,
+            2080.78,
+            535.73,
+            119.53
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          }
+        },
+        {
+          "order": 5,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster1.xml/6",
+          "id": "6",
+          "name": "Slide Number Placeholder 5",
+          "bbox": [
+            1121.05,
+            2080.78,
+            357.15,
+            119.53
+          ],
+          "geometry": "rect",
+          "text": "‹#›",
+          "textPreview": "‹#›",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "vertical": 1,
+            "verticalAlignment": "middle",
+            "insets": {
+              "top": 4.8,
+              "right": 9.6,
+              "bottom": 4.8,
+              "left": 9.6
+            }
+          },
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "‹#›",
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "‹#›"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwfyxobm",
+      "id": "89",
+      "name": "Google Shape;89;p1",
+      "bbox": [
+        810.59,
+        206.07,
+        768.13,
+        2018.93
+      ],
+      "geometry": "roundRect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      },
+      "fillColor": "lt1",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed8bat47",
+      "id": "91",
+      "name": "Google Shape;91;p1",
+      "bbox": [
+        9.6,
+        4.31,
+        1568.08,
+        188.54
+      ],
+      "geometry": "rect",
+      "text": "RV College of Engineering, Bengaluru – 560059.\n\n",
+      "textPreview": "RV College of Engineering, Bengaluru – 560059. |  |",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RV College of Engineering, Bengaluru – 560059."
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": ""
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RV College of Engineering, Bengaluru – 560059.",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RV College of Engineering, Bengaluru – 560059.",
+              "fontSize": 32,
+              "typeface": "Trebuchet MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "lt1",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0rqd4vm",
+      "id": "92",
+      "name": "Google Shape;92;p1",
+      "bbox": [
+        73.18,
+        72.87,
+        1272.55,
+        42.83
+      ],
+      "geometry": "rect",
+      "text": "Title: ",
+      "textPreview": "Title:",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Title:"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Title: ",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Title: ",
+              "fontSize": 32,
+              "typeface": "Trebuchet MS",
+              "color": {
+                "type": "theme",
+                "value": "accent2",
+                "transform": {
+                  "darken": 0.5
+                }
+              },
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfyxobm5",
+      "id": "93",
+      "name": "Google Shape;93;p1",
+      "bbox": [
+        164.63,
+        117.06,
+        1267.94,
+        68.68
+      ],
+      "geometry": "rect",
+      "text": "Student Name 1 | Student Name 2 | Student Name 3 | Student Name 4 | Student Name 5\nUSN 1 | USN 2 | USN 3 | USN 4 | USN 5 ",
+      "textPreview": "Student Name 1 | Student Name 2 | Student Name 3 | Student Name 4 | Student Name 5 | USN 1 | USN 2 | USN 3 | USN 4 | USN 5",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Student Name 1 | Student Name 2 | Student Name 3 | Student Name 4 | Student Name 5"
+          },
+          {
+            "index": 2,
+            "text": "USN 1 | USN 2 | USN 3 | USN 4 | USN 5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Student Name 1 | Student Name 2 | Student Name 3 | Student Name 4 | Student Name 5",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Student Name 1 | Student Name 2 | Student Name 3 | Student Name 4 | Student Name 5",
+              "fontSize": 26.67,
+              "typeface": "Times New Roman",
+              "color": "#002060"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "USN 1 | USN 2 | USN 3 | USN 4 | USN 5 ",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "USN 1 | USN 2 | USN 3 | USN 4 | USN 5 ",
+              "fontSize": 26.67,
+              "typeface": "Times New Roman",
+              "color": "#002060"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "lt1"
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36hcrmhk",
+      "id": "94",
+      "name": "Google Shape;94;p1",
+      "bbox": [
+        823.81,
+        1551.15,
+        740.09,
+        113.86
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lc7u54zi",
+      "id": "96",
+      "name": "Google Shape;96;p1",
+      "bbox": [
+        -36.84,
+        299.41,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wra5gbq1",
+      "id": "97",
+      "name": "Google Shape;97;p1",
+      "bbox": [
+        36.84,
+        1188.73,
+        8.09,
+        16.22
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/il0rqd4v",
+      "id": "101",
+      "name": "Google Shape;101;p1",
+      "bbox": [
+        0,
+        299.41,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcj6tova",
+      "id": "102",
+      "name": "Google Shape;102;p1",
+      "bbox": [
+        0,
+        1087.85,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0rqd4vmt",
+      "id": "103",
+      "name": "Google Shape;103;p1",
+      "bbox": [
+        0,
+        1082.41,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byhgn29g",
+      "id": "104",
+      "name": "Google Shape;104;p1",
+      "bbox": [
+        0,
+        1082.41,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/idonyd0z",
+      "id": "105",
+      "name": "Google Shape;105;p1",
+      "bbox": [
+        823.81,
+        1695.15,
+        612.83,
+        16.22
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t47y1kre",
+      "id": "106",
+      "name": "Google Shape;106;p1",
+      "bbox": [
+        442.04,
+        1705.19,
+        103.81,
+        21.63
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0je9cvix",
+      "id": "107",
+      "name": "Google Shape;107;p1",
+      "bbox": [
+        0,
+        1087.85,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bulwval8",
+      "id": "108",
+      "name": "Google Shape;108;p1",
+      "bbox": [
+        0,
+        1087.85,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9s36hcr",
+      "id": "109",
+      "name": "Google Shape;109;p1",
+      "bbox": [
+        981.2,
+        665.67,
+        103.81,
+        21.63
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3m94fu1",
+      "id": "110",
+      "name": "Google Shape;110;p1",
+      "bbox": [
+        1265.85,
+        667.06,
+        103.81,
+        21.63
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/loj2t83i",
+      "id": "111",
+      "name": "Google Shape;111;p1",
+      "bbox": [
+        0,
+        299.41,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3itgfmlk",
+      "id": "113",
+      "name": "Google Shape;113;p1",
+      "bbox": [
+        0,
+        309.46,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wb2hwfyx",
+      "id": "114",
+      "name": "Google Shape;114;p1",
+      "bbox": [
+        0,
+        444.25,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwval87e",
+      "id": "115",
+      "name": "Google Shape;115;p1",
+      "bbox": [
+        20.09,
+        401.97,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "116",
+      "name": "Google Shape;116;p1",
+      "bbox": [
+        20.09,
+        476.9,
+        1587.33,
+        58.84
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zed8v6ps",
+      "id": "131",
+      "name": "Google Shape;131;p1",
+      "bbox": [
+        14.99,
+        206.72,
+        789.48,
+        2018.93
+      ],
+      "rotation": 0,
+      "geometry": "roundRect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "dk1",
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": "              "
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 2,
+          "runs": [
+            {
+              "index": 1,
+              "text": "              ",
+              "fontSize": 20.09,
+              "typeface": "Arial"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u18jqh0f",
+      "id": "149",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        36.84,
+        927.95,
+        735.75,
+        156.08
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "[Clearly state the objective of your prototype. What goals does it aim to achieve?]\n\n\n",
+      "textPreview": "[Clearly state the objective of your prototype. What goals does it aim to achieve?] |  |  |",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "[Clearly state the objective of your"
+          },
+          {
+            "index": 2,
+            "text": "prototype. What goals does it aim to"
+          },
+          {
+            "index": 3,
+            "text": "achieve?]"
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "[Clearly state the objective of your prototype. What goals does it aim to achieve?]",
+          "runs": [
+            {
+              "index": 1,
+              "text": "[Clearly state the objective of your prototype. What goals does it aim to achieve?]",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47y1kre1",
+      "id": "150",
+      "name": "Google Shape;150;p1",
+      "bbox": [
+        27.09,
+        226.55,
+        762.23,
+        35.32
+      ],
+      "rotation": 0,
+      "geometry": "rect",
+      "text": "                           Introduction",
+      "textPreview": "Introduction",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "                           Introduction"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "                           Introduction",
+          "runs": [
+            {
+              "index": 1,
+              "text": "                           Introduction",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87ed8bat",
+      "id": "161",
+      "name": "Google Shape;161;p1",
+      "bbox": [
+        44.58,
+        1702.34,
+        717.08,
+        28.4
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqd4vmtw",
+      "id": "171",
+      "name": "Google Shape;171;p1",
+      "bbox": [
+        22.46,
+        1146.46,
+        776.62,
+        33.82
+      ],
+      "geometry": "rect",
+      "text": "                           Methodology",
+      "textPreview": "Methodology",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "                           Methodology"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "                           Methodology",
+          "runs": [
+            {
+              "index": 1,
+              "text": "                           Methodology",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kb6xkf6d",
+      "id": "172",
+      "name": "Google Shape;172;p1",
+      "bbox": [
+        819.02,
+        225.23,
+        745.14,
+        33.82
+      ],
+      "geometry": "rect",
+      "text": "Tools used",
+      "textPreview": "Tools used",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Tools used"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Tools used",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Tools used",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9w3m94fu",
+      "id": "173",
+      "name": "Google Shape;173;p1",
+      "bbox": [
+        817.12,
+        702.78,
+        745.14,
+        33.82
+      ],
+      "geometry": "rect",
+      "text": "Results and Discussions",
+      "textPreview": "Results and Discussions",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Results and Discussions"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Results and Discussions",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Results and Discussions",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2t83itgf",
+      "id": "174",
+      "name": "Google Shape;174;p1",
+      "bbox": [
+        821.28,
+        1926.29,
+        745.14,
+        36.37
+      ],
+      "geometry": "rect",
+      "text": "References",
+      "textPreview": "References",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "References"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "References",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "References",
+              "fontSize": 26.67,
+              "typeface": "Söhne",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra5gbq1o",
+      "id": "179",
+      "name": "Google Shape;179;p1",
+      "bbox": [
+        1356.63,
+        11.66,
+        231.8,
+        27.61
+      ],
+      "geometry": "rect",
+      "text": "Go, change the world",
+      "textPreview": "Go, change the world",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 0.56,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Go, change the world"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Go, change the world",
+          "marginLeft": 5316,
+          "runs": [
+            {
+              "index": 1,
+              "text": "Go, change the world",
+              "fontSize": 22.32,
+              "typeface": "Playfair Display",
+              "color": "#422C75",
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvixczed",
+      "id": "2",
+      "name": "Google Shape;150;p1",
+      "bbox": [
+        31.41,
+        884.88,
+        762.23,
+        33.82
+      ],
+      "geometry": "rect",
+      "text": "                           Objectives",
+      "textPreview": "Objectives",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "                           Objectives"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "                           Objectives",
+          "runs": [
+            {
+              "index": 1,
+              "text": "                           Objectives",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5gbq1ory",
+      "id": "3",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        25.91,
+        272.6,
+        735.75,
+        265.79
+      ],
+      "geometry": "rect",
+      "text": "[Include a brief introduction to set the context for your prototype.]\n\n\n\n\n\n\n",
+      "textPreview": "[Include a brief introduction to set the context for your prototype.] |  |  |  |  |  |  |",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 9,
+        "lines": [
+          {
+            "index": 1,
+            "text": "[Include a brief introduction to set the"
+          },
+          {
+            "index": 2,
+            "text": "context for your prototype.]"
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": ""
+          },
+          {
+            "index": 9,
+            "text": ""
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "[Include a brief introduction to set the context for your prototype.]",
+          "runs": [
+            {
+              "index": 1,
+              "text": "[Include a brief introduction to set the context for your prototype.]",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udg7adsj",
+      "id": "4",
+      "name": "Google Shape;150;p1",
+      "bbox": [
+        25.58,
+        556.94,
+        762.23,
+        33.82
+      ],
+      "geometry": "rect",
+      "text": "                           Problem Definition",
+      "textPreview": "Problem Definition",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "                           Problem Definition"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "                           Problem Definition",
+          "runs": [
+            {
+              "index": 1,
+              "text": "                           Problem Definition",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "5",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        42.89,
+        604.62,
+        735.75,
+        265.79
+      ],
+      "geometry": "rect",
+      "text": "[Explain the problem your prototype addresses and its significance.]\n\n\n\n\n\n\n",
+      "textPreview": "[Explain the problem your prototype addresses and its significance.] |  |  |  |  |  |  |",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 9,
+        "lines": [
+          {
+            "index": 1,
+            "text": "[Explain the problem your prototype"
+          },
+          {
+            "index": 2,
+            "text": "addresses and its significance.]"
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": ""
+          },
+          {
+            "index": 9,
+            "text": ""
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "[Explain the problem your prototype addresses and its significance.]",
+          "runs": [
+            {
+              "index": 1,
+              "text": "[Explain the problem your prototype addresses and its significance.]",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6tovah",
+      "id": "6",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        35.25,
+        1195.11,
+        735.75,
+        1021.9
+      ],
+      "geometry": "rect",
+      "text": "[Flowchart to elaborate on the strategic steps involved on crafting and refining key features]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "textPreview": "[Flowchart to elaborate on the strategic steps involved on crafting and refining key features] |  |  |  |  |  |  |  |  |  |  |  |  |  |  ...",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 36,
+        "lines": [
+          {
+            "index": 1,
+            "text": "[Flowchart to elaborate on the strategic"
+          },
+          {
+            "index": 2,
+            "text": "steps involved on crafting and refining"
+          },
+          {
+            "index": 3,
+            "text": "key features]"
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": ""
+          },
+          {
+            "index": 9,
+            "text": ""
+          },
+          {
+            "index": 10,
+            "text": ""
+          },
+          {
+            "index": 11,
+            "text": ""
+          },
+          {
+            "index": 12,
+            "text": ""
+          },
+          {
+            "index": 13,
+            "text": ""
+          },
+          {
+            "index": 14,
+            "text": ""
+          },
+          {
+            "index": 15,
+            "text": ""
+          },
+          {
+            "index": 16,
+            "text": ""
+          },
+          {
+            "index": 17,
+            "text": ""
+          },
+          {
+            "index": 18,
+            "text": ""
+          },
+          {
+            "index": 19,
+            "text": ""
+          },
+          {
+            "index": 20,
+            "text": ""
+          },
+          {
+            "index": 21,
+            "text": ""
+          },
+          {
+            "index": 22,
+            "text": ""
+          },
+          {
+            "index": 23,
+            "text": ""
+          },
+          {
+            "index": 24,
+            "text": ""
+          },
+          {
+            "index": 25,
+            "text": ""
+          },
+          {
+            "index": 26,
+            "text": ""
+          },
+          {
+            "index": 27,
+            "text": ""
+          },
+          {
+            "index": 28,
+            "text": ""
+          },
+          {
+            "index": 29,
+            "text": ""
+          },
+          {
+            "index": 30,
+            "text": ""
+          },
+          {
+            "index": 31,
+            "text": ""
+          },
+          {
+            "index": 32,
+            "text": ""
+          },
+          {
+            "index": 33,
+            "text": ""
+          },
+          {
+            "index": 34,
+            "text": ""
+          },
+          {
+            "index": 35,
+            "text": ""
+          },
+          {
+            "index": 36,
+            "text": ""
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "[Flowchart to elaborate on the strategic steps involved on crafting and refining key features]",
+          "runs": [
+            {
+              "index": 1,
+              "text": "[",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "Flowchart",
+              "typeface": "Bookman Old Style",
+              "color": "dk1",
+              "bold": true
+            },
+            {
+              "index": 3,
+              "text": " to elaborate on the strategic steps involved on crafting and refining key features]",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/54zidony",
+      "id": "7",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        830.67,
+        274.68,
+        735.75,
+        353.03
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 12,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": ""
+          },
+          {
+            "index": 9,
+            "text": ""
+          },
+          {
+            "index": 10,
+            "text": ""
+          },
+          {
+            "index": 11,
+            "text": ""
+          },
+          {
+            "index": 12,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyd0z610",
+      "id": "10",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        804.47,
+        1878.17,
+        754.87,
+        246.4
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 39,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/25kb6xkf",
+      "id": "180",
+      "name": "Picture 2",
+      "bbox": [
+        19.53,
+        11.66,
+        173.81,
+        173.81
+      ],
+      "contentType": "image/jpeg",
+      "imageCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "asset": {
+        "assetId": "/ppt/media/image1.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 163211
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image1.jpeg",
+        "contentType": "image/jpeg",
+        "byteLength": 163211
+      }
+    },
+    {
+      "order": 40,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u9knih4b",
+      "id": "8",
+      "name": "Google Shape;92;p1",
+      "bbox": [
+        1039.33,
+        147.59,
+        540,
+        42.83
+      ],
+      "geometry": "rect",
+      "text": "Theme:",
+      "textPreview": "Theme:",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Theme:"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Theme:",
+          "runs": [
+            {
+              "index": 1,
+              "text": "Theme:",
+              "fontSize": 32,
+              "typeface": "Trebuchet MS",
+              "color": {
+                "type": "theme",
+                "value": "accent2",
+                "transform": {
+                  "darken": 0.5
+                }
+              },
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    },
+    {
+      "order": 41,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6tovah",
+      "id": "13",
+      "name": "Google Shape;173;p1",
+      "bbox": [
+        818.75,
+        1233.97,
+        745.14,
+        33.82
+      ],
+      "geometry": "rect",
+      "text": "Conclusions",
+      "textPreview": "Conclusions",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Conclusions"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Conclusions",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Conclusions",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 42,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap4r65w",
+      "id": "14",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        821.28,
+        1571.95,
+        735.75,
+        246.4
+      ],
+      "geometry": "rect",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": ""
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          }
+        ]
+      }
+    },
+    {
+      "order": 43,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e9cvixcz",
+      "id": "46",
+      "name": "Google Shape;173;p1",
+      "bbox": [
+        815.19,
+        1616.64,
+        769.65,
+        33.82
+      ],
+      "geometry": "rect",
+      "text": "Outcome of the work",
+      "textPreview": "Outcome of the work",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Outcome of the work"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Outcome of the work",
+          "resolvedTextStyle": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Outcome of the work",
+              "fontSize": 24.56,
+              "typeface": "Comic Sans MS",
+              "color": "#002060",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "#FFC000",
+      "lineColor": "dk1",
+      "lineWidth": 1
+    },
+    {
+      "order": 44,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5o7qpg",
+      "id": "47",
+      "name": "Google Shape;149;p1",
+      "bbox": [
+        826.78,
+        1701.15,
+        735.75,
+        149.46
+      ],
+      "geometry": "rect",
+      "text": "[Clearly state the outcome - (Publication/Product Development/Patenting) ]\n\n\n",
+      "textPreview": "[Clearly state the outcome - (Publication/Product Development/Patenting) ] |  |  |",
+      "resolvedFontSize": 39.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 39.68,
+        "typeface": "Calibri",
+        "color": "tx1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "resizeShapeToFitText",
+        "insets": {
+          "top": 2.01,
+          "right": 4.02,
+          "bottom": 2.01,
+          "left": 4.02
+        },
+        "useParagraphSpacing": true
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "[Clearly state the outcome -"
+          },
+          {
+            "index": 2,
+            "text": "(Publication/Product"
+          },
+          {
+            "index": 3,
+            "text": "Development/Patenting) ]"
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": ""
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "[Clearly state the outcome - (Publication/Product Development/Patenting) ]",
+          "runs": [
+            {
+              "index": 1,
+              "text": "[Clearly state the ",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            },
+            {
+              "index": 2,
+              "text": "outcome - ",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            },
+            {
+              "index": 3,
+              "text": "(Publication/Product Development/Patenting",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            },
+            {
+              "index": 4,
+              "text": ")",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            },
+            {
+              "index": 5,
+              "text": " ",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            },
+            {
+              "index": 6,
+              "text": "]",
+              "typeface": "Bookman Old Style",
+              "color": "dk1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ]
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,23 @@
+{
+  "sourcePptx": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/sanitized-template.pptx",
+  "mapPath": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-frame-map.json",
+  "output": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-starter.pptx",
+  "outputBytes": 186450,
+  "sourceSlideCount": 1,
+  "slideCount": 1,
+  "previewDir": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-starter-preview",
+  "layoutDir": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "single-slide technical poster",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 15,
+      "previewPath": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    }
+  ]
+}

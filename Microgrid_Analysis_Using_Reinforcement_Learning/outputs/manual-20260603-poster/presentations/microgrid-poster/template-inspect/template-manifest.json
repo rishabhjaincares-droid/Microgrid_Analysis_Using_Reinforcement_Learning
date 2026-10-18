@@ -1,0 +1,109 @@
+{
+  "sourcePptx": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/sanitized-template.pptx",
+  "workspace": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster",
+  "outDir": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-inspect",
+  "generatedAt": "2026-06-03T13:58:50.331Z",
+  "slideCount": 1,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "template-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "template-inspect/layouts/source-slide-01.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "template-inspect/template-inspect.ndjson",
+  "inspectTruncated": false,
+  "inspectMetadata": {
+    "revision": "2zvi7x",
+    "target": {
+      "id": "pr/c3pkft"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [
+    {
+      "entry": "ppt/media/image1.jpeg",
+      "path": "/Users/surya/EL_2nd_sem/microgrid_el/outputs/manual-20260603-poster/presentations/microgrid-poster/template-inspect/assets/ppt/media/image1.jpeg",
+      "relativePath": "template-inspect/assets/ppt/media/image1.jpeg",
+      "bytes": 163211
+    }
+  ],
+  "fonts": [
+    "+mj-cs",
+    "+mj-ea",
+    "+mj-lt",
+    "+mn-cs",
+    "+mn-ea",
+    "+mn-lt",
+    "Angsana New",
+    "Arial",
+    "Bookman Old Style",
+    "Calibri",
+    "Calibri Light",
+    "Comic Sans MS",
+    "Cordia New",
+    "DaunPenh",
+    "DokChampa",
+    "Estrangelo Edessa",
+    "Euphemia",
+    "Gautami",
+    "Georgia",
+    "Iskoola Pota",
+    "Kalinga",
+    "Kartika",
+    "Latha",
+    "MV Boli",
+    "Mangal",
+    "Microsoft Himalaya",
+    "Microsoft Uighur",
+    "Microsoft Yi Baiti",
+    "Mongolian Baiti",
+    "MoolBoran",
+    "Nyala",
+    "Plantagenet Cherokee",
+    "Playfair Display",
+    "Raavi",
+    "Shruti",
+    "Sylfaen",
+    "Söhne",
+    "Tahoma",
+    "Times New Roman",
+    "Trebuchet MS",
+    "Tunga",
+    "Vrinda",
+    "宋体",
+    "新細明體",
+    "游ゴシック",
+    "游ゴシック Light",
+    "等线",
+    "等线 Light",
+    "맑은 고딕",
+    "ＭＳ Ｐゴシック"
+  ],
+  "packageParts": {
+    "mediaCount": 1,
+    "slideXmlCount": 1,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

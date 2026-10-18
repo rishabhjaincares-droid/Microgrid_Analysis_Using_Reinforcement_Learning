@@ -1,0 +1,28 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "single-slide technical poster",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {"action": "rewrite", "sourceElementId": "sh/l0rqd4vm", "purpose": "poster title"},
+        {"action": "rewrite", "sourceElementId": "sh/wfyxobm5", "purpose": "subtitle/authors placeholder"},
+        {"action": "rewrite", "sourceElementId": "sh/u9knih4b", "purpose": "theme subtitle"},
+        {"action": "rewrite", "sourceElementId": "sh/5gbq1ory", "purpose": "introduction"},
+        {"action": "rewrite", "sourceElementId": "sh/nyd0z610", "purpose": "problem definition"},
+        {"action": "rewrite", "sourceElementId": "sh/u18jqh0f", "purpose": "objectives"},
+        {"action": "rewrite", "sourceElementId": "sh/cj6tovah", "purpose": "methodology flow"},
+        {"action": "rewrite", "sourceElementId": "sh/kb6xkf6d", "purpose": "tools heading"},
+        {"action": "rewrite", "sourceElementId": "sh/54zidony", "purpose": "tools content"},
+        {"action": "rewrite", "sourceElementId": "sh/9w3m94fu", "purpose": "results heading"},
+        {"action": "rewrite", "sourceElementId": "sh/36hcrmhk", "purpose": "results content"},
+        {"action": "rewrite", "sourceElementId": "sh/cj6tovah", "purpose": "conclusion heading"},
+        {"action": "rewrite", "sourceElementId": "sh/nap4r65w", "purpose": "conclusion content"},
+        {"action": "rewrite", "sourceElementId": "sh/3q5o7qpg", "purpose": "outcome content"},
+        {"action": "rewrite", "sourceElementId": "sh/nyd0z610", "purpose": "references content"}
+      ]
+    }
+  ],
+  "omittedSourceSlides": []
+}

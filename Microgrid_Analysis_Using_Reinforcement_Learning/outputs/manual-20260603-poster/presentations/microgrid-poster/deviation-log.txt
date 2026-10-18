@@ -1,0 +1,1 @@
+Sanitized invisible PowerPoint change/comment metadata to allow artifact-tool import. Visible poster layout and assets preserved. Content placeholders are replaced with microgrid project poster text.

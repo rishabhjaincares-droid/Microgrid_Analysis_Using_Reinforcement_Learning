@@ -1,0 +1,1 @@
+Task mode: template-following. Source deck has one poster slide with RVCE header, blue border, yellow section bars, two-column poster layout, and placeholder text blocks. Preserve layout, logo, header, theme, borders, and section structure. Fill existing poster content slots with condensed microgrid project content.

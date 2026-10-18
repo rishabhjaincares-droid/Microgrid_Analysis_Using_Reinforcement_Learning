@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Microgrid RL Dashboard | Energy Management System</title>
+    <meta name="description" content="Interactive dashboard for Smart Microgrid Reinforcement Learning energy management system. Compare DQN, PPO agents against rule-based baselines using real NASA POWER solar data from Hosur, Tamil Nadu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Animated Background Particles -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <div class="nav-logo">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="12" stroke="var(--primary-500)" stroke-width="2"/>
+                    <circle cx="14" cy="14" r="6" fill="var(--primary-500)" opacity="0.3"/>
+                    <path d="M14 2 L14 26 M2 14 L26 14 M5.8 5.8 L22.2 22.2 M22.2 5.8 L5.8 22.2" stroke="var(--primary-400)" stroke-width="1" opacity="0.5"/>
+                    <circle cx="14" cy="14" r="3" fill="var(--primary-500)"/>
+                </svg>
+            </div>
+            <span class="nav-title">MicroGrid<span class="accent-text">RL</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#overview" class="nav-link active">Overview</a>
+            <a href="#architecture" class="nav-link">Architecture</a>
+            <a href="#results" class="nav-link">Results</a>
+            <a href="#scenarios" class="nav-link">Scenarios</a>
+            <a href="#energy-flow" class="nav-link">Energy Flow</a>
+            <a href="#config" class="nav-link">Configuration</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="overview">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                NASA POWER Data • Hosur, Tamil Nadu (12.74°N, 78.14°E)
+            </div>
+            <h1 class="hero-title">
+                Smart Microgrid
+                <span class="gradient-text">Energy Management</span>
+                <span class="subtitle-text">with Reinforcement Learning</span>
+            </h1>
+            <p class="hero-description">
+                Deep Q-Network and Proximal Policy Optimization agents trained on real solar irradiance data 
+                to optimize battery dispatch, minimize electricity bills, and reduce peak-hour grid dependency 
+                for a 4 kW residential solar + 5 kWh battery system.
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-value" data-count="12.8">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Bill Savings (Nov)</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-value" data-count="54.7">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Peak Import Cut</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-value" data-count="8784">0</span>
+                    <span class="stat-label">Hours of Data</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-value" data-count="4">0</span>
+                    <span class="stat-label">Controllers Tested</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="energy-orbit">
+                <div class="orbit-ring ring-1"></div>
+                <div class="orbit-ring ring-2"></div>
+                <div class="orbit-ring ring-3"></div>
+                <div class="orbit-center">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <rect x="8" y="12" width="32" height="24" rx="2" stroke="var(--primary-400)" stroke-width="2"/>
+                        <rect x="12" y="16" width="10" height="6" fill="var(--primary-500)" opacity="0.4"/>
+                        <rect x="26" y="16" width="10" height="6" fill="var(--primary-500)" opacity="0.4"/>
+                        <rect x="12" y="26" width="10" height="6" fill="var(--primary-500)" opacity="0.4"/>
+                        <rect x="26" y="26" width="10" height="6" fill="var(--primary-500)" opacity="0.4"/>
+                        <line x1="24" y1="12" x2="24" y2="6" stroke="var(--primary-400)" stroke-width="2"/>
+                        <circle cx="24" cy="4" r="2" fill="var(--accent-500)"/>
+                    </svg>
+                </div>
+                <div class="orbit-node node-solar" title="Solar PV 4kW">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-500)" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                </div>
+                <div class="orbit-node node-battery" title="Battery 5kWh">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-500)" stroke-width="2">
+                        <rect x="6" y="7" width="12" height="14" rx="2"/><line x1="10" y1="7" x2="10" y2="4"/><line x1="14" y1="7" x2="14" y2="4"/><rect x="8" y="11" width="8" height="6" fill="var(--secondary-500)" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="orbit-node node-grid" title="Grid Connection">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-500)" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <div class="orbit-node node-load" title="Household Load">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-500)" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Metrics Bar -->
+    <section class="metrics-bar">
+        <div class="metric-card">
+            <div class="metric-icon solar-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2"/>
+                </svg>
+            </div>
+            <div class="metric-info">
+                <span class="metric-value">4.0 kW</span>
+                <span class="metric-label">PV Capacity</span>
+            </div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-icon battery-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="6" y="7" width="12" height="14" rx="2"/><line x1="10" y1="7" x2="10" y2="4"/><line x1="14" y1="7" x2="14" y2="4"/>
+                </svg>
+            </div>
+            <div class="metric-info">
+                <span class="metric-value">5.0 kWh</span>
+                <span class="metric-label">Battery Capacity</span>
+            </div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-icon data-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/>
+                </svg>
+            </div>
+            <div class="metric-info">
+                <span class="metric-value">NASA POWER</span>
+                <span class="metric-label">Data Source</span>
+            </div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-icon algo-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            <div class="metric-info">
+                <span class="metric-value">DQN + PPO</span>
+                <span class="metric-label">RL Algorithms</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="section" id="architecture">
+        <div class="section-header">
+            <span class="section-badge">System Design</span>
+            <h2 class="section-title">Architecture Overview</h2>
+            <p class="section-subtitle">End-to-end pipeline from NASA satellite data to trained RL controllers</p>
+        </div>
+        <div class="architecture-grid">
+            <div class="arch-card" data-step="1">
+                <div class="arch-step">01</div>
+                <div class="arch-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-500)" stroke-width="2">
+                        <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9"/>
+                    </svg>
+                </div>
+                <h3>Data Acquisition</h3>
+                <p>Hourly solar irradiance and temperature from NASA POWER API for Hosur, Tamil Nadu. Full year 2024 — 8,784 hourly datapoints.</p>
+                <div class="arch-tags">
+                    <span class="arch-tag">NASA POWER API</span>
+                    <span class="arch-tag">ALLSKY_SFC_SW_DWN</span>
+                    <span class="arch-tag">T2M</span>
+                </div>
+            </div>
+            <div class="arch-card" data-step="2">
+                <div class="arch-step">02</div>
+                <div class="arch-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-500)" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+                    </svg>
+                </div>
+                <h3>Environment Simulation</h3>
+                <p>Custom OpenAI Gym environment with realistic physics — battery SOC tracking, charge/discharge efficiency, ToD tariffs, and energy balance.</p>
+                <div class="arch-tags">
+                    <span class="arch-tag">Gymnasium</span>
+                    <span class="arch-tag">7-dim Obs</span>
+                    <span class="arch-tag">5 Actions</span>
+                </div>
+            </div>
+            <div class="arch-card" data-step="3">
+                <div class="arch-step">03</div>
+                <div class="arch-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-500)" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>RL Training</h3>
+                <p>DQN with experience replay and PPO with GAE — both trained via Stable-Baselines3. Months 1–9 training, month 10 validation, months 11–12 test.</p>
+                <div class="arch-tags">
+                    <span class="arch-tag">Stable-Baselines3</span>
+                    <span class="arch-tag">DQN</span>
+                    <span class="arch-tag">PPO</span>
+                </div>
+            </div>
+            <div class="arch-card" data-step="4">
+                <div class="arch-step">04</div>
+                <div class="arch-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-500)" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/>
+                    </svg>
+                </div>
+                <h3>Evaluation & Results</h3>
+                <p>Head-to-head comparison on unseen Nov–Dec data. RL saves ₹95/month and cuts peak imports by 55% compared to rule-based baseline.</p>
+                <div class="arch-tags">
+                    <span class="arch-tag">Bill Savings</span>
+                    <span class="arch-tag">Peak Shaving</span>
+                    <span class="arch-tag">SOC Optimization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section results-section" id="results">
+        <div class="section-header">
+            <span class="section-badge">Performance Analysis</span>
+            <h2 class="section-title">Controller Comparison</h2>
+            <p class="section-subtitle">RL agents vs rule-based baseline on held-out test data (November & December 2024)</p>
+        </div>
+
+        <!-- Tab Control for Scenario Selection -->
+        <div class="scenario-tabs">
+            <button class="scenario-tab active" data-scenario="november">November 2024</button>
+            <button class="scenario-tab" data-scenario="mid-nov">Mid-Nov Peak Week</button>
+            <button class="scenario-tab" data-scenario="mid-dec">Mid-Dec Peak Week</button>
+        </div>
+
+        <!-- Results Cards -->
+        <div class="results-overview" id="resultsOverview">
+            <div class="result-highlight-card savings-card">
+                <div class="highlight-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                    </svg>
+                </div>
+                <div class="highlight-value" id="billSavings">₹95.43</div>
+                <div class="highlight-label">Bill Savings</div>
+                <div class="highlight-change positive" id="billSavingsPercent">▼ 12.8% vs baseline</div>
+            </div>
+            <div class="result-highlight-card peak-card">
+                <div class="highlight-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <div class="highlight-value" id="peakCut">13.01 kWh</div>
+                <div class="highlight-label">Peak Import Reduction</div>
+                <div class="highlight-change positive" id="peakCutPercent">▼ 54.7% less peak grid</div>
+            </div>
+            <div class="result-highlight-card grid-card">
+                <div class="highlight-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                    </svg>
+                </div>
+                <div class="highlight-value" id="gridImportCut">18.87 kWh</div>
+                <div class="highlight-label">Grid Import Reduction</div>
+                <div class="highlight-change positive" id="gridImportPercent">▼ 11.2% lower import</div>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="comparison-container">
+            <div class="table-wrapper">
+                <table class="comparison-table" id="comparisonTable">
+                    <thead>
+                        <tr>
+                            <th>Controller</th>
+                            <th>Bill Cost (₹)</th>
+                            <th>Battery Cycles</th>
+                            <th>Grid Import (kWh)</th>
+                            <th>Exported (kWh)</th>
+                            <th>Peak Import (kWh)</th>
+                            <th>Grid Charging (kWh)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparisonBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3 class="chart-title">Bill Cost Comparison</h3>
+                <div class="bar-chart" id="billChart"></div>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-title">Peak-Hour Grid Import</h3>
+                <div class="bar-chart" id="peakChart"></div>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-title">Total Grid Import</h3>
+                <div class="bar-chart" id="gridChart"></div>
+            </div>
+            <div class="chart-card">
+                <h3 class="chart-title">Battery Cycles</h3>
+                <div class="bar-chart" id="cycleChart"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenario Deep Dive -->
+    <section class="section" id="scenarios">
+        <div class="section-header">
+            <span class="section-badge">Test Scenarios</span>
+            <h2 class="section-title">Demo Scenario Catalog</h2>
+            <p class="section-subtitle">Five curated evaluation windows on held-out November–December 2024 data</p>
+        </div>
+        <div class="scenarios-grid">
+            <div class="scenario-card active-scenario">
+                <div class="scenario-period">Nov 1 — Nov 30</div>
+                <h3>November 2024</h3>
+                <p>Full held-out month with regular weekday and weekend patterns.</p>
+                <div class="scenario-stats">
+                    <span>720 hours</span>
+                    <span>Full month</span>
+                </div>
+            </div>
+            <div class="scenario-card">
+                <div class="scenario-period">Dec 1 — Dec 31</div>
+                <h3>December 2024</h3>
+                <p>Full held-out month with different seasonal solar and evening peaks.</p>
+                <div class="scenario-stats">
+                    <span>744 hours</span>
+                    <span>Full month</span>
+                </div>
+            </div>
+            <div class="scenario-card">
+                <div class="scenario-period">Nov 11 — Nov 17</div>
+                <h3>Mid-November Peak Week</h3>
+                <p>Highlights battery reserve decisions before evening peaks.</p>
+                <div class="scenario-stats">
+                    <span>168 hours</span>
+                    <span>Peak focus</span>
+                </div>
+            </div>
+            <div class="scenario-card">
+                <div class="scenario-period">Nov 22 — Nov 28</div>
+                <h3>Late-November Mixed-Solar</h3>
+                <p>Mixed-solar conditions that stress when to save charge versus export surplus.</p>
+                <div class="scenario-stats">
+                    <span>168 hours</span>
+                    <span>Mixed solar</span>
+                </div>
+            </div>
+            <div class="scenario-card">
+                <div class="scenario-period">Dec 9 — Dec 15</div>
+                <h3>Mid-December Peak Week</h3>
+                <p>Repeated evening demand spikes — useful live demo window.</p>
+                <div class="scenario-stats">
+                    <span>168 hours</span>
+                    <span>Peak demand</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Energy Flow Visualization -->
+    <section class="section" id="energy-flow">
+        <div class="section-header">
+            <span class="section-badge">Visualization</span>
+            <h2 class="section-title">Energy Flow Diagram</h2>
+            <p class="section-subtitle">Real-time energy flow between solar, battery, grid, and household load</p>
+        </div>
+        <div class="energy-flow-container">
+            <div class="flow-diagram">
+                <!-- Solar Panel Node -->
+                <div class="flow-node solar-node" id="solarNode">
+                    <div class="flow-node-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <span class="flow-node-label">Solar PV</span>
+                    <span class="flow-node-value" id="solarValue">2.45 kW</span>
+                </div>
+
+                <!-- Battery Node -->
+                <div class="flow-node battery-node" id="batteryNode">
+                    <div class="flow-node-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="6" y="7" width="12" height="14" rx="2"/><line x1="10" y1="7" x2="10" y2="4"/><line x1="14" y1="7" x2="14" y2="4"/>
+                        </svg>
+                    </div>
+                    <span class="flow-node-label">Battery</span>
+                    <span class="flow-node-value" id="batteryValue">SOC: 72%</span>
+                    <div class="soc-bar">
+                        <div class="soc-fill" id="socFill" style="width: 72%"></div>
+                    </div>
+                </div>
+
+                <!-- Grid Node -->
+                <div class="flow-node grid-node" id="gridNode">
+                    <div class="flow-node-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <span class="flow-node-label">Grid</span>
+                    <span class="flow-node-value" id="gridValue">₹7.00/kWh</span>
+                </div>
+
+                <!-- Load Node -->
+                <div class="flow-node load-node" id="loadNode">
+                    <div class="flow-node-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <span class="flow-node-label">Load</span>
+                    <span class="flow-node-value" id="loadValue">1.12 kW</span>
+                </div>
+
+                <!-- Flow Lines (SVG) -->
+                <svg class="flow-lines" id="flowLines" viewBox="0 0 800 400">
+                    <defs>
+                        <linearGradient id="solarToLoad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="var(--accent-500)"/>
+                            <stop offset="100%" stop-color="var(--primary-500)"/>
+                        </linearGradient>
+                        <linearGradient id="solarToBattery" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="var(--accent-500)"/>
+                            <stop offset="100%" stop-color="var(--secondary-500)"/>
+                        </linearGradient>
+                        <linearGradient id="batteryToLoad" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="var(--secondary-500)"/>
+                            <stop offset="100%" stop-color="var(--primary-500)"/>
+                        </linearGradient>
+                        <linearGradient id="gridToLoad" x1="100%" y1="0%" x2="0%" y2="0%">
+                            <stop offset="0%" stop-color="var(--primary-600)"/>
+                            <stop offset="100%" stop-color="var(--primary-500)"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Animated flow paths -->
+                    <path class="flow-path solar-to-load" d="M200,100 C350,100 450,300 600,300" stroke="url(#solarToLoad)" fill="none" stroke-width="3" stroke-dasharray="8,4"/>
+                    <path class="flow-path solar-to-battery" d="M200,100 C200,200 200,250 200,300" stroke="url(#solarToBattery)" fill="none" stroke-width="2" stroke-dasharray="8,4"/>
+                    <path class="flow-path battery-to-load" d="M200,300 C350,300 450,300 600,300" stroke="url(#batteryToLoad)" fill="none" stroke-width="2" stroke-dasharray="8,4"/>
+                    <path class="flow-path grid-to-load" d="M600,100 C600,200 600,250 600,300" stroke="url(#gridToLoad)" fill="none" stroke-width="2" stroke-dasharray="8,4"/>
+                </svg>
+            </div>
+
+            <!-- Simulation Controls -->
+            <div class="simulation-controls">
+                <h3>Simulation Hour</h3>
+                <div class="time-slider-container">
+                    <input type="range" id="hourSlider" min="0" max="23" value="12" class="time-slider">
+                    <div class="time-labels">
+                        <span>00:00</span>
+                        <span>06:00</span>
+                        <span>12:00</span>
+                        <span>18:00</span>
+                        <span>23:00</span>
+                    </div>
+                </div>
+                <div class="current-hour" id="currentHour">12:00</div>
+                <div class="time-info">
+                    <div class="time-info-item">
+                        <span class="info-label">Tariff Period</span>
+                        <span class="info-value" id="tariffPeriod">Solar Hour</span>
+                    </div>
+                    <div class="time-info-item">
+                        <span class="info-label">Import Rate</span>
+                        <span class="info-value" id="importRate">₹5.60/kWh</span>
+                    </div>
+                    <div class="time-info-item">
+                        <span class="info-label">RL Action</span>
+                        <span class="info-value" id="rlAction">charge_high</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configuration Section -->
+    <section class="section" id="config">
+        <div class="section-header">
+            <span class="section-badge">System Parameters</span>
+            <h2 class="section-title">Configuration Details</h2>
+            <p class="section-subtitle">Battery, solar, tariff, and RL training parameters</p>
+        </div>
+        <div class="config-grid">
+            <!-- Battery Config -->
+            <div class="config-card">
+                <div class="config-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-500)" stroke-width="2">
+                        <rect x="6" y="7" width="12" height="14" rx="2"/><line x1="10" y1="7" x2="10" y2="4"/><line x1="14" y1="7" x2="14" y2="4"/>
+                    </svg>
+                    <h3>Battery Configuration</h3>
+                </div>
+                <div class="config-items">
+                    <div class="config-item">
+                        <span class="config-key">Capacity</span>
+                        <span class="config-val">5.0 kWh</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">SOC Range</span>
+                        <span class="config-val">20% – 95%</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Start SOC</span>
+                        <span class="config-val">50%</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Max Charge</span>
+                        <span class="config-val">2.0 kWh/hr</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Max Discharge</span>
+                        <span class="config-val">2.0 kWh/hr</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Charge Efficiency</span>
+                        <span class="config-val">95%</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Discharge Efficiency</span>
+                        <span class="config-val">95%</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Degradation Cost</span>
+                        <span class="config-val">₹0.03/kWh</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solar Config -->
+            <div class="config-card">
+                <div class="config-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-500)" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2"/>
+                    </svg>
+                    <h3>Solar Configuration</h3>
+                </div>
+                <div class="config-items">
+                    <div class="config-item">
+                        <span class="config-key">PV Capacity</span>
+                        <span class="config-val">4.0 kW</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Performance Ratio</span>
+                        <span class="config-val">78%</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Inverter Limit</span>
+                        <span class="config-val">3.5 kWh</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Location</span>
+                        <span class="config-val">Hosur, Tamil Nadu</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Coordinates</span>
+                        <span class="config-val">12.74°N, 78.14°E</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Data Period</span>
+                        <span class="config-val">Jan–Dec 2024</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tariff Config -->
+            <div class="config-card">
+                <div class="config-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-500)" stroke-width="2">
+                        <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                    </svg>
+                    <h3>Tariff Structure (ToD)</h3>
+                </div>
+                <div class="config-items">
+                    <div class="config-item">
+                        <span class="config-key">Normal Rate</span>
+                        <span class="config-val">₹7.00/kWh</span>
+                    </div>
+                    <div class="config-item highlight-solar">
+                        <span class="config-key">Solar Hour Rate</span>
+                        <span class="config-val">₹5.60/kWh</span>
+                    </div>
+                    <div class="config-item highlight-peak">
+                        <span class="config-key">Peak Rate</span>
+                        <span class="config-val">₹8.40/kWh</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Export Rate</span>
+                        <span class="config-val">₹3.00/kWh</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Export Limit</span>
+                        <span class="config-val">2.0 kWh/hr</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Solar Hours</span>
+                        <span class="config-val">09:00 – 16:00</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Peak Hours</span>
+                        <span class="config-val">18:00 – 21:00</span>
+                    </div>
+                </div>
+                <!-- Tariff Timeline -->
+                <div class="tariff-timeline">
+                    <div class="tariff-bar">
+                        <div class="tariff-segment normal-segment" style="width: 37.5%;" title="Normal: 00–08, 17, 22–23">
+                            <span>Normal</span>
+                        </div>
+                        <div class="tariff-segment solar-segment" style="width: 33.3%;" title="Solar: 09–16">
+                            <span>Solar</span>
+                        </div>
+                        <div class="tariff-segment normal-segment-2" style="width: 4.2%;" title="Normal: 17">
+                        </div>
+                        <div class="tariff-segment peak-segment" style="width: 16.7%;" title="Peak: 18–21">
+                            <span>Peak</span>
+                        </div>
+                        <div class="tariff-segment normal-segment-3" style="width: 8.3%;" title="Normal: 22–23">
+                        </div>
+                    </div>
+                    <div class="tariff-labels">
+                        <span>00</span><span>06</span><span>09</span><span>12</span><span>16</span><span>18</span><span>22</span><span>24</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RL Training Config -->
+            <div class="config-card">
+                <div class="config-header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-400)" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <h3>RL Training Parameters</h3>
+                </div>
+                <div class="config-items">
+                    <div class="config-item">
+                        <span class="config-key">Train Split</span>
+                        <span class="config-val">Months 1–9</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Validation</span>
+                        <span class="config-val">Month 10</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Test Split</span>
+                        <span class="config-val">Months 11–12</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Observation Space</span>
+                        <span class="config-val">7 dimensions</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Action Space</span>
+                        <span class="config-val">5 discrete</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Actions</span>
+                        <span class="config-val code-val">discharge_high, discharge_low, idle, charge_low, charge_high</span>
+                    </div>
+                    <div class="config-item">
+                        <span class="config-key">Random Seed</span>
+                        <span class="config-val">42</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MDP Details -->
+    <section class="section" id="mdp">
+        <div class="section-header">
+            <span class="section-badge">Technical Deep Dive</span>
+            <h2 class="section-title">MDP Formulation</h2>
+            <p class="section-subtitle">The Markov Decision Process at the heart of the RL agent</p>
+        </div>
+        <div class="mdp-grid">
+            <div class="mdp-card">
+                <h3>State Space <span class="mdp-dim">ℝ⁷</span></h3>
+                <div class="mdp-items">
+                    <div class="mdp-item"><span class="mdp-index">s₁</span> Battery SOC</div>
+                    <div class="mdp-item"><span class="mdp-index">s₂</span> Solar Generation (normalized)</div>
+                    <div class="mdp-item"><span class="mdp-index">s₃</span> Load Demand (normalized)</div>
+                    <div class="mdp-item"><span class="mdp-index">s₄</span> Import Rate (normalized)</div>
+                    <div class="mdp-item"><span class="mdp-index">s₅</span> sin(2π·hour/24)</div>
+                    <div class="mdp-item"><span class="mdp-index">s₆</span> cos(2π·hour/24)</div>
+                    <div class="mdp-item"><span class="mdp-index">s₇</span> Peak Hour Flag</div>
+                </div>
+            </div>
+            <div class="mdp-card">
+                <h3>Action Space <span class="mdp-dim">|A| = 5</span></h3>
+                <div class="mdp-items">
+                    <div class="mdp-item"><span class="mdp-index action-discharge">a₀</span> Discharge High (−100%)</div>
+                    <div class="mdp-item"><span class="mdp-index action-discharge">a₁</span> Discharge Low (−50%)</div>
+                    <div class="mdp-item"><span class="mdp-index action-idle">a₂</span> Idle (0%)</div>
+                    <div class="mdp-item"><span class="mdp-index action-charge">a₃</span> Charge Low (+50%)</div>
+                    <div class="mdp-item"><span class="mdp-index action-charge">a₄</span> Charge High (+100%)</div>
+                </div>
+            </div>
+            <div class="mdp-card reward-card">
+                <h3>Reward Function</h3>
+                <div class="reward-formula">
+                    <code>R(s, a) = −bill_cost − throughput × degradation_cost</code>
+                </div>
+                <p class="reward-explanation">
+                    The agent is penalized by the electricity bill (grid import cost minus export credit) 
+                    plus a small battery degradation term. This naturally incentivizes the agent to minimize 
+                    grid imports during peak hours and utilize solar surplus efficiently.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                        <circle cx="14" cy="14" r="12" stroke="var(--primary-500)" stroke-width="2"/>
+                        <circle cx="14" cy="14" r="3" fill="var(--primary-500)"/>
+                    </svg>
+                    <span>MicroGrid<span class="accent-text">RL</span></span>
+                </div>
+                <p>Smart Microgrid Energy Management with Reinforcement Learning</p>
+            </div>
+            <div class="footer-links">
+                <h4>Tech Stack</h4>
+                <span>Python • Stable-Baselines3 • Gymnasium</span>
+                <span>NASA POWER API • DQN • PPO</span>
+            </div>
+            <div class="footer-links">
+                <h4>Data</h4>
+                <span>Hosur, Tamil Nadu</span>
+                <span>12.74°N, 78.14°E</span>
+                <span>2024 Hourly Irradiance</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>EL Semester 2 Project — Smart Microgrid RL Simulation</span>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
